@@ -1,183 +1,225 @@
 
 
 let mainFrame = document.getElementById("main-frame");
-mainFrame.classList = "flex p-0";
+mainFrame.classList = "flex flex-col border-2 border-solid p-10 m-10 justify-center items-center";
 
+let flagBox = document.createElement("div");
+flagBox.classList = " p-4"
 
-//             1st One
+function getIndiaFlag() {
+    let indiaFlag = document.createElement("div");
+    indiaFlag.classList = "w-61 h-31 border-2 border-solid m-4";
 
-let redColor = document.createElement("div");
-redColor.classList = "bg-red-500 w-60 h-20";
 
-let whiteColor = document.createElement("div");
-whiteColor.classList = "w-60 h-20";
+    let indianOrange = document.createElement("div");
+    indianOrange.classList = "bg-orange-500 w-60.2 h-10";
 
-let indonesia = document.createElement("div");
-indonesia.classList = "border-2 w-61 h-40 m-20";
-indonesia.appendChild(redColor);
-indonesia.appendChild(whiteColor);
+    let indianWhite = document.createElement("div");
+    indianWhite.classList = "w-60.2 h-10 justify-items-center";
 
+    let blueDisc = document.createElement("div");
+    blueDisc.classList = "rounded-full bg-blue-600 w-10 h-10"
 
+    indianWhite.appendChild(blueDisc);
 
-//             2nd One
+    let indianGreen = document.createElement("div");
+    indianGreen.classList = "w-60.2 h-10 bg-green-500";
 
+    indiaFlag.appendChild(indianOrange);
+    indiaFlag.appendChild(indianWhite);
+    indiaFlag.appendChild(indianGreen);
 
-let germany = document.createElement("div");
-germany.classList = "w-60.5 h-40.2 m-20 border-2"
+    return indiaFlag;
+}
 
+function getCanadaFlag() {
+    let canadaFlag = document.createElement("div");
+    canadaFlag.classList = "w-60.8 h-30.8 border-2 flex m-4";
 
-let blackColor = document.createElement("div");
-blackColor.classList = "bg-black w-60 h-13";
+    let canadaRed = document.createElement("div");
+    canadaRed.classList = "w-20 h-30 bg-red-600";
 
-let germanredColor = document.createElement("div");
-germanredColor.classList = "bg-red-750 w-60 h-13";
+    let canadaWhite = document.createElement("div");
+    canadaWhite.classList = "w-20 h-30 flex justify-center items-center";
 
-let yellowColor = document.createElement("div");
-yellowColor.classList = "bg-yellow-300 w-60 h-13";
+    let canadaSymbol = document.createElement("div");
+    canadaSymbol.classList = "rounded-full w-10 h-10 bg-red-600";
 
+    canadaWhite.appendChild(canadaSymbol);
 
-germany.appendChild(blackColor);
-germany.appendChild(germanredColor);
-germany.appendChild(yellowColor);
+    let canadaRed2 = document.createElement("div");
+    canadaRed2.classList = "w-20 h-30 bg-red-600";
 
+    canadaFlag.appendChild(canadaRed);
+    canadaFlag.appendChild(canadaWhite);
+    canadaFlag.appendChild(canadaRed2);
 
+    return canadaFlag;
+}
 
+function getGermanyFlag() {
+    let germanyFlag = document.createElement("div");
+    germanyFlag.classList = "w-61 h-31 border-2 border-solid m-4";
 
-//             3rd One
 
+    let germanyBlack = document.createElement("div");
+    germanyBlack.classList = "bg-black w-60.2 h-10";
 
-let bulgaria = document.createElement("div");
-bulgaria.classList = "w-60.8 h-40.2 m-20 border-2"
+    let germanyRed = document.createElement("div");
+    germanyRed.classList = "w-60.2 h-10 bg-red-700";
 
 
+    let germanyYellow = document.createElement("div");
+    germanyYellow.classList = "w-60.2 h-10 bg-yellow-300";
 
-let bulgariawhiteColor = document.createElement("div");
-bulgariawhiteColor.classList = "w-60 h-13";
+    germanyFlag.appendChild(germanyBlack);
+    germanyFlag.appendChild(germanyRed);
+    germanyFlag.appendChild(germanyYellow);
 
-let bulgariaGreenColor = document.createElement("div");
-bulgariaGreenColor.classList = "bg-green-500 w-60 h-13";
+    return germanyFlag;
+}
 
-let bulgariaredColor = document.createElement("div");
-bulgariaredColor.classList = "bg-red-500 w-60 h-13";
+function getFrenchFlag() {
+    let frenchFlag = document.createElement("div");
+    frenchFlag.classList = "w-60.8 h-30.8 flex border-2 m-4";
 
-bulgaria.appendChild(bulgariawhiteColor);
-bulgaria.appendChild(bulgariaGreenColor);
-bulgaria.appendChild(bulgariaredColor);
+    let frenchBlue = document.createElement("div");
+    frenchBlue.classList = "bg-blue-800 h-30 w-20";
 
+    let frenchWhite = document.createElement("div");
+    frenchWhite.classList = "h-30 w-20";
 
-//             4th One
+    let frenchRed = document.createElement("div");
+    frenchRed.classList = "bg-red-700 w-20 h-30";
 
 
-let mainFrame2 = document.getElementById("main-frame-2");
-mainFrame2.classList = "flex p-0";
+    frenchFlag.appendChild(frenchBlue);
+    frenchFlag.appendChild(frenchWhite);
+    frenchFlag.appendChild(frenchRed);
 
+    return frenchFlag;
+}
 
-let poland = document.createElement("div");
-poland.classList = "border-2 w-61 h-40.5 m-20";
+function getItalyFlag() {
+    let italyFlag = document.createElement("div");
+    italyFlag.classList = "w-60.8 h-30.8 flex border-2 m-4";
 
-let polandredColor = document.createElement("div");
-polandredColor.classList = "bg-red-500 w-60 h-20";
+    let italyGreen = document.createElement("div");
+    italyGreen.classList = "w-20 h-30 bg-green-700";
 
-let polandwhiteColor = document.createElement("div");
-polandwhiteColor.classList = "w-60 h-20";
+    let italyWhite = document.createElement("div");
+    italyWhite.classList = "w-20 h-30";
 
+    let italyRed = document.createElement("div");
+    italyRed.classList = "bg-red-800 w-20 h-30";
 
-poland.appendChild(polandwhiteColor);
-poland.appendChild(polandredColor);
+    italyFlag.appendChild(italyGreen);
+    italyFlag.appendChild(italyWhite);
+    italyFlag.appendChild(italyRed);
 
+    return italyFlag;
+}
 
+function getJapanFlag() {
+    let japanFlag = document.createElement("div");
+    japanFlag.classList = "border-2 m-4 w-60.8 h-30.8"
 
-//             5th One
+    let japanWhite = document.createElement("div");
+    japanWhite.classList = "w-60 h-30 flex justify-center items-center";
 
+    let redDisc = document.createElement("div");
+    redDisc.classList = "bg-red-600 rounded-full w-15 h-15"
 
-let nether = document.createElement("div");
-nether.classList = "w-60.8 h-40 m-20 border-2"
+    japanWhite.appendChild(redDisc);
 
+    japanFlag.appendChild(japanWhite);
+    return japanFlag;
+}
 
-let netherMaroonColor = document.createElement("div");
-netherMaroonColor.classList = "w-60 h-13 bg-red-700";
+function getSwitzerFlag() {
+    let swizzFlag = document.createElement("div");
+    swizzFlag.classList = "m-4 border-2 w-60.8 h-30.8";
 
-let netherwhiteColor = document.createElement("div");
-netherwhiteColor.classList = "w-60 h-13";
+    let swizzRed = document.createElement("div");
+    swizzRed.classList = "bg-red-600 w-60 h-30 flex justify-center items-center";
 
-let netherBlueColor = document.createElement("div");
-netherBlueColor.classList = "bg-blue-800 w-60 h-13";
+    let whiteDisc = document.createElement("div");
+    whiteDisc.classList = "bg-white w-15 h-15 rounded-full";
 
-nether.appendChild(netherMaroonColor);
-nether.appendChild(netherwhiteColor);
-nether.appendChild(netherBlueColor);
+    swizzRed.appendChild(whiteDisc);
 
+    swizzFlag.appendChild(swizzRed);
 
+    return swizzFlag;
+}
 
-//             6th One
+function getEuFlag() {
+    let euFlag = document.createElement("div");
+    euFlag.classList = "m-4 w-60.8 h-30.8 border-2";
 
+    let euBlue = document.createElement("div");
+    euBlue.classList = "bg-blue-500 w-60 h-30 flex justify-center items-center";
 
-let argentina = document.createElement("div");
-argentina.classList = "w-60.8 h-40 m-20 border-2"
+    let whiteDisc = document.createElement("div");
+    whiteDisc.classList = "bg-white w-15 h-15 rounded-full";
 
+    euBlue.appendChild(whiteDisc);
 
-let argentinaBlueColor = document.createElement("div");
-argentinaBlueColor.classList = "bg-blue-300 w-60 h-13"
+    euFlag.appendChild(euBlue);
+    return euFlag;
+}
 
+let searchContainer = document.createElement("div");
+searchContainer.classList = "flex";
 
-let argentinawhiteColor = document.createElement("div");
-argentinawhiteColor.classList = "w-60 h-13 flex justify-center items-center";
 
-let argentinaYellowDisc=document.createElement("div");
-argentinaYellowDisc.classList="rounded-full bg-yellow-300 w-10 h-10";
+let countryName;
+flagBox.appendChild(getIndiaFlag());
+let inputBar = document.createElement("input");
+inputBar.classList = "w-50 h-10 border-2 m-2";
 
-argentinawhiteColor.appendChild(argentinaYellowDisc);
+let searchButton = document.createElement("button");
+searchButton.classList = "w-30 h-10 bg-green-300 m-2 rounded-sm";
+searchButton.innerText = "Search Country";
+searchButton.addEventListener("click", () => {
+    let country = inputBar.value.toLowerCase();
+    inputBar.value = "";
+    countryName = country;
+    flagBox.innerHTML = "";
+    if (countryName == "canada") {
+        flagBox.appendChild(getCanadaFlag());
+    }
+    else if (countryName == "germany") {
+        flagBox.appendChild(getGermanyFlag());
+    }
+    else if (countryName == "france") {
+        flagBox.appendChild(getFrenchFlag());
 
-let argentinaBlueColor2 = document.createElement("div");
-argentinaBlueColor2.classList = "bg-blue-300 w-60 h-13"
+    }
+    else if (countryName == "italy") {
+        flagBox.appendChild(getItalyFlag());
 
+    }
+    else if (countryName == "japan") {
+        flagBox.appendChild(getJapanFlag());
 
-argentina.appendChild(argentinaBlueColor);
-argentina.appendChild(argentinawhiteColor);
-argentina.appendChild(argentinaBlueColor2);
+    }
+    else if (countryName == "switzerland") {
+        flagBox.appendChild(getSwitzerFlag());
 
+    }
+    else if (countryName == "eu") {
+        flagBox.appendChild(getEuFlag());
 
+    }
+    else {
+        flagBox.appendChild(getIndiaFlag());
 
+    }
+});
 
-//             7th One
+searchContainer.appendChild(inputBar);
+searchContainer.appendChild(searchButton);
 
-
-let mainFrame3 = document.getElementById("main-frame-3");
-mainFrame3.classList = "flex p-0";
-
-
-let morocco=document.createElement("div");
-morocco.classList="bg-red-800 w-60 h-40 m-20 border-2 flex justify-center items-center";
-
-
-let moroccoGreenDisc=document.createElement("div");
-moroccoGreenDisc.classList="bg-green-800 rounded-full w-10 h-10"
-morocco.appendChild(moroccoGreenDisc);
-
-
-//             8th One
-
-let tunesia=document.createElement("div");
-tunesia.classList="bg-red-600 w-60 h-40 m-20 border-2 flex justify-center items-center";
-
-let tunesiaWhiteDisc=document.createElement("div");
-tunesiaWhiteDisc.classList="bg-white rounded-full w-10 h-10";
-
-tunesia.appendChild(tunesiaWhiteDisc);
-
-
-
-mainFrame.appendChild(indonesia);
-mainFrame.appendChild(germany);
-mainFrame.appendChild(bulgaria);
-
-
-
-mainFrame2.appendChild(poland);
-mainFrame2.appendChild(nether);
-mainFrame2.appendChild(argentina);
-
-
-
-mainFrame3.appendChild(morocco);
-mainFrame3.appendChild(tunesia);
+mainFrame.appendChild(searchContainer);
+mainFrame.appendChild(flagBox);
